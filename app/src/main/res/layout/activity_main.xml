@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#234226"
+    tools:context="com.app3.imsaiful.hashmap.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/title"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ellipsize="start"
+        android:gravity="center"
+        android:hint="HashMap Collection"
+        android:inputType="number"
+        android:background="@drawable/edittextstyle"
+
+
+        />
+        <EditText
+            android:layout_below="@+id/title"
+            android:id="@+id/lower"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="Enter Lower Limit"
+            android:inputType="number"
+            android:background="@drawable/edittextstyle"
+            />
+        <EditText
+
+            android:id="@+id/upper"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="Enter upper Limit"
+            android:inputType="number"
+            android:layout_below="@+id/lower"
+            android:background="@drawable/edittextstyle"
+            />
+        <EditText
+
+            android:id="@+id/random"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ellipsize="start"
+            android:layout_below="@+id/upper"
+            android:gravity="center"
+            android:hint="Enter Random number operation"
+            android:inputType="number"
+            android:background="@drawable/edittextstyle"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:id="@+id/button"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/random"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/generate"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Generate HashMap"
+                android:layout_below="@+id/random"
+                android:background="@drawable/edittextstyle"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reset"
+                android:layout_weight="1"
+                android:layout_toRightOf="@+id/generate"
+                android:text="Reset"
+                android:layout_below="@+id/random"
+                android:background="@drawable/edittextstyle"
+                android:layout_marginRight="15dp"
+                />
+
+        </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Number   frequency"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button"
+        android:id="@+id/gview"
+        android:background="@drawable/edittextstyle"
+        >
+        </TextView>
+
+
+
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>
